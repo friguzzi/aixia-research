@@ -1,0 +1,26 @@
+
+
+Requires python 3 with numpy, scikit-learn, nltk and https://github.com/amueller/word_cloud
+
+If you already have a working installation of numpy and scipy, the easiest way to install scikit-learn is using pip
+pip install -U scikit-learn
+or conda:
+conda install scikit-learn
+
+pip install wordcloud
+Install NLTK: run sudo pip install -U nltk
+
+    vectorize docs
+python document_vectorization_soci.py
+    build overall cloud
+python overall_cloud.py
+    do the clustering
+python document_clustering_soci.py
+    build clouds for clusters
+python cluster_clouds.py
+    compute member similarity to cluster
+python classification_soci_papers.py
+    print file output.html with info on clusters
+python print_clustering_soci.py
+    print table with member-cluster similarity
+python print_soci_sim_papers_norm.py
